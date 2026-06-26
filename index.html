@@ -1,1 +1,121 @@
+<!DOCTYPE html>
 
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>For Tushar❤️</title>
+
+<style> body{ font-family: Arial, sans-serif; background: linear-gradient(135deg,#ffd6e7,#fff0f7); display:flex; justify-content:center; align-items:center; min-height:100vh; margin:0; overflow:hidden; } .page{ display:none; background:white; width:80%; max-width:700px; padding:30px; border-radius:20px; text-align:center; box-shadow:0 0 20px rgba(0,0,0,0.15); } .active{ display:block; } button{ padding:12px 20px; border:none; border-radius:10px; cursor:pointer; margin-top:15px; background:#ff4d88; color:white; font-size:16px; } input, textarea{ width:80%; padding:10px; border-radius:10px; border:1px solid #ccc; } #noBtn{ position:absolute; background:#888; } .kiss{ font-size:80px; animation: flykiss 2s infinite; } @keyframes flykiss{ 0%{transform:translateX(0);} 50%{transform:translateX(80px);} 100%{transform:translateX(0);} } </style>
+
+</head>
+
+<body>
+
+<!-- PAGE 1 -->
+
+<div class="page active" id="page1"> <h2>🔒 Secret Access</h2> <p>Only my pasandida mard can enter ❤️</p>
+
+<input type="password" id="password" placeholder="Enter Password">
+<br><br>
+
+<button onclick="checkPassword()">Open Surprise</button>
+
+<p id="error"></p>
+<button onclick="showHint()">💡 Hint</button>
+
+<p id="hint" style="display:none;">
+    Hint: When god made the earth bless. nhi smjhe na! ur dob T ❤️
+</p>
+
+</div>
+
+<!-- PAGE 2 -->
+
+<div class="page" id="page2"> <h1>❤️ Hi My Tushar ❤️</h1>
+
+<p>
+I'm really sorry for not being able to give you the time and attention you deserve lately. I know that its my fault and I hate that I've made you feel like you're not a priority. That was never my intention.
+</p>
+<p>
+
+Sometimes life gets busy and overwhelming, but that's not an excuse for making you feel ignored or alone. You mean so much to me, and the last thing I ever want is for you to doubt how important you are in my life.
+</p>
+
+<p>
+Even on the days when I'm quiet, busy, or exhausted, please know that you are still on my mind. I miss you more than I can put into words. I miss our conversations, your smile, your voice, and all the little moments that make my day better.
+</p>
+<p>
+Thank you for being patient with me after all the stupid arguments and for staying by my side despite the distance. I know I haven't been perfect, but my feelings for you have never changed.
+</p>
+<p>
+And in case I don't say it enough: I love you. I love you in the little moments, in the busy moments, in the happy moments, and even in the difficult ones. No amount of distance, time zones, or missed calls could ever change that. You are one of the most special people in my life, and my heart feels at home with you. ❤️
+</p>
+<p>
+I'm sorry, my love. I promise I'll try harder because you're worth every effort and every second. 💕✨<br>
+
+I love you endlessly. ❤️<br>
+Thank you for loving me even when I'm imperfect. Thank you for staying. ❤️
+</p>
+
+<button onclick="nextPage(2,3)">Continue ❤️</button>
+
+</div>
+
+<!-- PAGE 3 -->
+
+<div class="page" id="page3"> <h2>💌 Tell Me Something</h2>
+
+<p>What is your fav memory of us?aah dont skip the question pls.....</p>
+
+<textarea rows="4" placeholder="Write here..."></textarea>
+<br>
+
+<button onclick="nextPage(3,4)">Submit ❤️</button>
+
+</div>
+
+<!-- PAGE 4 -->
+
+<div class="page" id="page4"> <h2>❤️ One Important Question ❤️</h2>
+
+<p>Will you forgive me and let me love you forever? 🥺</p>
+
+<button onclick="yesAnswer()">YES ❤️</button>
+<button id="noBtn">NO 😅</button>
+
+<p id="answer"></p>
+
+</div>
+
+<!-- PAGE 5 -->
+
+<div class="page" id="page5"> <div class="kiss">💋</div>
+
+<h1>I Love You ❤️</h1>
+
+<p>
+Sending a virtual kiss across every mile between us.
+</p>
+
+<p>
+No matter where we are,
+you will always have a special place in my heart.
+</p>
+
+<p>
+I love you today,
+tomorrow,
+and every day after that. ❤️✨
+</p>
+
+<h2>😘 Mwahhhhh! 💋</h2>
+
+</div>
+
+<script> 
+const secretPassword = "2105"; function checkPassword(){ let pass = document.getElementById("password").value; if(pass === secretPassword){ nextPage(1,2); } else{ document.getElementById("error").innerHTML = "❌ Wrong password!"; } }
+function showHint() {
+    document.getElementById("hint").style.display = "block";
+}
+
+ function nextPage(current,next){ document.getElementById("page"+current).classList.remove("active"); document.getElementById("page"+next).classList.add("active"); }
+  function yesAnswer(){ document.getElementById("answer").innerHTML = "🥰 I knew it! Thank you, my love ❤️"; setTimeout(()=>{ nextPage(4,5); },1500); } const noBtn = document.getElementById("noBtn"); noBtn.addEventListener("mouseover",()=>{ const x = Math.random()*(window.innerWidth-150); const y = Math.random()*(window.innerHeight-100); noBtn.style.left = x + "px"; noBtn.style.top = y + "px"; }); </script>
+
+</body> </html>
